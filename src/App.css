@@ -4,3 +4,55 @@
   padding: 0rem;
   text-align: center;
 }
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+font-weight: bold;
+margin: 0px 6rem; 
+  
+}
+
+.logo {
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo p{
+  font-size: 24px;
+  padding-right: 3px;
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav ul{
+list-style: none;
+
+}
+
+.header-nav ul li{
+display: inline-block;
+padding: 0px 6px;
+}
+
+.header-nav ul li:hover{
+ text-underline-position: below;
+ text-underline-offset: 2;
+}
+
+  .header-ico-shop :first-child{
+font-size: 50px;
+padding:0px 1rem;
+  }
+
+  .header-ico-shop :nth-child(2){
+    width: 40px;
+    border-radius: 50%;
+
+  }
