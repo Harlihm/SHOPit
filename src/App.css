@@ -39,7 +39,7 @@ list-style: none;
 .header-nav ul li{
 display: inline-block;
 padding: 0px 6px;
-transition:all ease-in 1s;
+transition:all ease-in 0.5s;
 cursor: pointer;
 }
 
@@ -81,23 +81,26 @@ padding:0px 1rem;
 }
  .banner-arrow{
   position: absolute;
-  width: fit-content;
+  width: 14rem;
   display: flex;
   align-items: center;
-  bottom: 59px;
-  gap: 10;
-  left: 39rem;
+  justify-content: space-between;
+  bottom: 70px;
+  left: 43vw;
   /* right: 0; */
+  /* top: 0; */
 
  }
   .arrow{
-   width: 30px;
-   height: 22px;
-   border: solid 1px ;
+   width: 50px;
+   height: 40px;
+   border: solid 2px ;
    color: gray;
    display: flex;
    align-items: center;
    justify-content: center;
+   font-size: 30px;
+   transition: all ease-in 0.3s;
 
 
   }
@@ -106,5 +109,51 @@ padding:0px 1rem;
 }
   .arrow:hover{
     cursor: pointer;
-    color: rgb(103, 103, 103);
+    color: rgb(209, 209, 209);
+    background-color: black;
+  }
+
+  .product-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 9rem;
+  }
+
+  .product-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-wrapper .product-text h1{
+    /* border: none; */
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    height: 4rem;
+   
+  }
+
+  .product-text span{
+    background-color: black;
+    width: 6rem;
+    height: 5px;
+  }
+
+  .product-text p{
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .footer-wrapper{
+    display: flex;
+    background-color: black;
+    color: #949494;
   }
