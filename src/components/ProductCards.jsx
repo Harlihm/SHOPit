@@ -1,8 +1,8 @@
 
-const ProductCards = () => {
+const ProductCards = ({item}) => {
   return (
     <div>
-        
+       productcards 
     </div>
   )
 }

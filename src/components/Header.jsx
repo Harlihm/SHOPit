@@ -1,13 +1,15 @@
 // import React from 'react';
-import { FaShopify } from 'react-icons/Fa';
+import {CiShoppingTag} from 'react-icons/ci'
+
 import { AiFillShop } from 'react-icons/ai'
 
 const Header = () => {
   return (
-    <div className="header-wrapper">
+<div className="head-co">
+<div className="header-wrapper">
       <div className="logo">
         <p>SHOPit</p>
-        <FaShopify/>
+        <CiShoppingTag/>
 
       </div>
       <div className="header-nav">
@@ -28,6 +30,7 @@ const Header = () => {
          </div>
       </div>
     </div>
+</div>
   )
 }
 

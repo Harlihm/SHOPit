@@ -5,13 +5,20 @@
   text-align: center;
 }
 
+.head-co{
+  position: sticky;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100;
+background-color: white;
+}
 .header-wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
 font-weight: bold;
 margin: 0px 6rem; 
-  
 }
 
 .logo {
@@ -151,9 +158,105 @@ padding:0px 1rem;
     max-width: 700px;
     text-align: center;
   }
-
+ .product-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10;
+  line-height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 30rem;
+  height: auto;
+ }
   .footer-wrapper{
-    display: flex;
     background-color: black;
     color: #949494;
+    margin:0px;
+
+    
   }
+  .footer-content{
+  padding: 3rem  0px;
+
+    margin: 4rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .fa-logo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ra-ico{
+    display: flex;
+align-items: center;
+justify-content: space-between; 
+cursor: pointer;
+ }
+
+
+  .foot {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0;
+line-height: 0;
+
+  }
+
+  .foot p{
+    display: flex;
+    align-items: center;
+    gap: 2;
+    cursor: pointer;
+    transition: all ease 0.5s;
+
+  }
+
+  .foot p:hover{
+    color: white;
+  }
+
+ .p-fot{
+  margin-right: 4px;
+ }
+
+ /* .foot-misc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 44em;
+ } */
+.subscribe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+ .subscribe input{
+  background: transparent;
+  border: solid 1px white;
+  color: white;
+  width: 13rem;
+  height: 2rem;
+  /* font-size: 17px; */
+
+ }
+ .subscribe input::placeholder{
+color: #949494; 
+ }
+ .subscribe button{
+  background: transparent;
+  border: none 1px white;
+  color: white;
+  width: 13rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
+ }
+ .subscribe button:hover{
+  background-color: white;
+  color: black;
+ }
