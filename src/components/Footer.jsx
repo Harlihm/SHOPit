@@ -1,4 +1,4 @@
-import { FaFacebook, FaHome, FaInstagram, FaTwitter } from "react-icons/Fa"
+import { FaFacebook, FaHome, FaInstagram, FaTwitter } from "react-icons/fa"
 import {ImGithub} from 'react-icons/im';
 import{ BsPaypal, BsPersonFill } from 'react-icons/bs'
 import { MdLocationOn } from 'react-icons/md'
