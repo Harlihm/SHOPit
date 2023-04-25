@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import ProductCards from "./ProductCards"
 
-// eslint-disable-next-line react/prop-types
 const Product = ({products}) => {
 // console.log(products);
 
