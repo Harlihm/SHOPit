@@ -183,7 +183,7 @@ height: 100%;
 }
 
 .prod-group{
-  width: 16rem;
+  max-width: 17rem;
   /* height: 30rem; */
 }
 .prod-group:hover .prod-img{

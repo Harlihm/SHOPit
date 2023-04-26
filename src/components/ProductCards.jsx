@@ -27,6 +27,9 @@ const ProductCards = ({ product }) => {
         </p>
       </div>
      </div>
+     <div>
+      <p>{product.category}</p>
+     </div>
     </div>
    </div>
   )
