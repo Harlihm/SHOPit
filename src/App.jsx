@@ -34,7 +34,7 @@ children:[
     element:<Home/>,
     loader:productsData,
   },
-  {
+  { 
     path:"/cart",
     element:<Cart/>,
   }
