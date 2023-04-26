@@ -28,7 +28,12 @@ const ProductCards = ({ product }) => {
       </div>
      </div>
      <div>
-      <p>{product.category}</p>
+      <p style={{height:"0.5rem"}}>{product.category}</p>
+     </div>
+     <div style={{position:"absolute",top:"4px",right:"0"}}>
+      {product.isNew && (
+        <p style={{background:"black" ,color:"white",fontWeight:"bold" ,padding:"0.5rem 2rem"}}>  Sale</p>
+      )}
      </div>
     </div>
    </div>
