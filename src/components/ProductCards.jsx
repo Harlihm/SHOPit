@@ -1,11 +1,27 @@
 /* eslint-disable react/prop-types */
 
 import { BsArrowRight } from "react-icons/bs"
+import { useNavigate } from "react-router-dom";
 
 const ProductCards = ({ product }) => {
+const  navigate =useNavigate()
+const _id=product.title;
+const idString=(_id) =>{
+  return String(_id).toLowerCase().split(" ").join("");
+};
+const rootId= idString(_id);
+// console.log(rootId);
+const handleDetails=()=>{
+navigate(`/product/${rootId}`,{
+  state:{
+    item: product,
+  }
+})
+}
+
   return (
    <div className="prod-group">
-     <div className="prod-wrapper">
+     <div onClick={handleDetails} className="prod-wrapper">
       <img className="prod-img" src={product.image} alt="productimg" />
     </div>
     <div className="prod-text">

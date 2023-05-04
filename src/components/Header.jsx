@@ -7,11 +7,14 @@ const Header = () => {
   return (
 <div className="head-co">
 <div className="header-wrapper">
-      <div className="logo">
+     
+      {/* <link to="/"> */}
+       <div className="logo">
         <p>SHOPit</p>
         <CiShoppingTag/>
 
       </div>
+      {/* </link> */}
       <div className="header-nav">
          <div>
          <ul>
