@@ -1,6 +1,6 @@
 // import React from 'react';
 import {CiShoppingTag} from 'react-icons/ci'
-
+import { Link } from 'react-router-dom'
 import { AiFillShop } from 'react-icons/ai'
 
 const Header = () => {
@@ -8,13 +8,13 @@ const Header = () => {
 <div className="head-co">
 <div className="header-wrapper">
      
-      {/* <link to="/"> */}
+      <Link style={{textDecoration:"none",color:"black"}} to="/">
        <div className="logo">
         <p>SHOPit</p>
         <CiShoppingTag/>
 
       </div>
-      {/* </link> */}
+      </Link>
       <div className="header-nav">
          <div>
          <ul>

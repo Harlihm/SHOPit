@@ -21,7 +21,7 @@ setCurrentSlide(currentSlide===0?3: (prev)=>prev-1)
     setCurrentSlide(currentSlide===3?0: (prev)=>prev+1)
       }
 
-      console.log(currentSlide);
+      // console.log(currentSlide);
 
   return (
     <div className="banner-wrapper">

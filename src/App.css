@@ -335,3 +335,8 @@ color: #949494;
   background-color: white;
   color: black;
  }
+
+ .produc-wrapper-img{
+  position: relative;
+  width: 40%;
+ }
