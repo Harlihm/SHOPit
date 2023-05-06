@@ -340,3 +340,69 @@ color: #949494;
   position: relative;
   width: 40%;
  }
+ .ratings{
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+
+ }
+
+ .ratings p{
+color: gray;
+/* align-items: start; */
+ }
+ .prod-quantity{
+  width: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ color: gray;
+ font-weight: 500;
+ gap: 0.4rem;
+ border: solid 1px  gray;
+ height: 2rem;
+ padding: 0.75rem;
+ }
+
+ .quantity-btn{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+font-weight: bold;
+
+ }
+ .quantity-btn button{
+  cursor: pointer;
+  height: 1.5rem;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:  0.5rem;
+  background: transparent;
+  border: #949494 0.3px solid;
+
+
+ }
+
+ .quantity-btn button:hover{
+background: black;
+color: white;
+transition-duration: 300ms;
+ }
+
+ .quantity-btn button:active{
+  background: black;
+  color: white;
+  transition-duration: 300ms;
+   }
+
+   .cart-btn{
+    background: black;
+    color: white;
+    padding: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    /* height: 3rem; */
+   }
