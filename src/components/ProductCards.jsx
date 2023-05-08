@@ -1,9 +1,14 @@
 /* eslint-disable react/prop-types */
 
 import { BsArrowRight } from "react-icons/bs"
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { addToCart } from "../redux/shopitSlice";
 
 const ProductCards = ({ product }) => {
+
+const dispatch= useDispatch();
+
 const  navigate =useNavigate()
 const _id=product.title;
 const idString=(_id) =>{
@@ -36,7 +41,15 @@ navigate(`/product/${rootId}`,{
             <p style={{color: "gray" ,textDecoration:"line-through"}}>${product.oldPrice}</p>
             <p style={{fontWeight:"600"}}>${product.price}</p>
            </div>
-        <p className="prod-p" >add to cart
+        <p onClick={()=>dispatch(addToCart({
+              _id:product._id,
+              title: product.title,
+              image: product.image,
+              price: product.price,
+              quantity: 1,
+              description:product.description,
+
+        }))}  className="prod-p" >add to cart
         <span>
           <BsArrowRight/>
         </span>
