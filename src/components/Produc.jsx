@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react"
 import { MdOutlineStar } from "react-icons/md";
+import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
+import { addToCart } from "../redux/shopitSlice";
+import { ToastContainer, toast } from "react-toastify";
 
 
 const Produc = () => {
 
-
+const dispatch = useDispatch();
 const [details , setDetails]= useState({});
+let [ baseQty ,setBaseQty]=useState(1);
 const location =useLocation();
 
   useEffect(()=>{
@@ -66,13 +70,33 @@ const location =useLocation();
        <div className="prod-quantity">
           <p className="quanitiy">Quantity</p>
           <div className="quantity-btn">
-          <button>-</button>
-          <span>{1}</span>
-          <button>+</button>
+          <button onClick={()=>setBaseQty(baseQty ===1? baseQty=1: baseQty-1)}>-</button>
+          <span>{baseQty}</span>
+          <button onClick={()=>setBaseQty(baseQty + 1)}>+</button>
           </div>
         </div>
 
-        <button className="cart-btn">
+        <button onClick={()=>dispatch(
+                   addToCart({
+                    _id: details._id,
+                    title: details.title,
+                    image: details.image,
+                    price: details.price,
+                    quantity: baseQty,
+                    description: details.description,
+                   })
+
+        ) & toast.success( `${details.title} is added`, {
+          position: "top-left",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          })
+        } className="cart-btn">
           add to cart
         </button>
        </div>
@@ -84,6 +108,18 @@ const location =useLocation();
 
       
     </div>
+    <ToastContainer
+position="top-left"
+autoClose={2000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
     </div>
   )
 }

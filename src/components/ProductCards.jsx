@@ -4,6 +4,8 @@ import { BsArrowRight } from "react-icons/bs"
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from "../redux/shopitSlice";
+import { ToastContainer, toast } from "react-toastify";
+
 
 const ProductCards = ({ product }) => {
 
@@ -49,7 +51,9 @@ navigate(`/product/${rootId}`,{
               quantity: 1,
               description:product.description,
 
-        }))}  className="prod-p" >add to cart
+        })) & toast.success( `${product.title} is added`,
+          )
+        }  className="prod-p" >add to cart
         <span>
           <BsArrowRight/>
         </span>
@@ -65,6 +69,18 @@ navigate(`/product/${rootId}`,{
       )}
      </div>
     </div>
+    <ToastContainer
+position="top-left"
+autoClose={2000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
    </div>
   )
 }
