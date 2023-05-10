@@ -363,6 +363,7 @@ color: gray;
  border: solid 1px  gray;
  height: 2rem;
  padding: 0.75rem;
+ margin: 16px;
  }
 
  .quantity-btn{
@@ -370,6 +371,7 @@ color: gray;
   align-items: center;
   gap: 0.75rem;
 font-weight: bold;
+color: black;
 
  }
  .quantity-btn button{
@@ -426,4 +428,64 @@ display: flex;
     border-bottom: solid 1px gray;
 padding-bottom: 0.6rem;
 
+   }
+
+   .checkout-btn{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: white;
+    width: 100%;
+    padding: 0.7rem 0;
+    margin-top: 0.6rem;
+    background: black;
+    cursor: pointer;
+    transition-duration: 300ms;
+
+
+   }
+
+   .checkout-btn:hover{
+  
+    color: gray;
+    border: solid 1px gray;
+   }
+
+   .cart-saleswrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 0.7rem;
+    justify-content: space-between;
+   }
+
+   .cart-sales{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+   }
+   .removecart{
+    font-size: 1.25rem;
+    color: gray;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 300ms;
+   }
+
+   .removecart:hover{
+    color: red;
+   }
+
+   .resetcart{
+    color: white;
+    background: red;
+    border: transparent;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 20px;
+    cursor: pointer;
+   }
+
+   .resetcart:hover{
+    background: rgb(108, 2, 2);
    }

@@ -70,7 +70,7 @@ const location =useLocation();
        <div className="prod-quantity">
           <p className="quanitiy">Quantity</p>
           <div className="quantity-btn">
-          <button onClick={()=>setBaseQty(baseQty ===1? baseQty=1: baseQty-1)}>-</button>
+          <button  onClick={()=>setBaseQty(baseQty ===1? baseQty=1: baseQty-1)}>-</button>
           <span>{baseQty}</span>
           <button onClick={()=>setBaseQty(baseQty + 1)}>+</button>
           </div>

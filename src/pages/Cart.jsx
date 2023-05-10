@@ -1,9 +1,25 @@
 // import { useSelector } from "react-redux"
 
+import { ToastContainer } from "react-toastify"
 import CartItem from "../components/CartItem"
+import { useSelector } from "react-redux"
+import { useEffect, useState } from "react";
 
 const Cart = () => {
-// const productData = useSelector((state)=> state.shopit.productData);
+
+  const productData =useSelector((state)=>state.shopit.productData);
+  const [totalAmt, setTotalAmt]=useState("");
+
+  useEffect(()=>{
+    let price =0;
+    productData.map((item)=>{
+      price +=item.price * item.quantity;
+      return price
+  
+    }); 
+       setTotalAmt(price.toFixed(2));
+  },[productData]);
+
 
 
   return (
@@ -17,13 +33,13 @@ const Cart = () => {
                 <div className="prodItem-total">
                   <h2 style={{fontWeight:"bold ",textAlign:"start"}}>cart totals</h2>
                   <p style={{display:"flex",alignItems:"center",gap:"0.5rem" ,fontSize:"1rem",lineHeight:"1.5rem"}}>
-                    Subtotal {" "}
+                    Subtotal
                     <span style={{fontWeight:"bold"}}> 
-                      ${200}
+                      ${totalAmt}
                     </span>
                   </p>
                   <p style={{display:"flex",alignItems:"center",gap:"0.5rem" ,fontSize:"1rem",lineHeight:"1.5rem"}}>
-                    Shipping {" "}
+                    Shipping
                     <span style={{textAlign:"start"}}> 
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, assumenda.
                     </span>
@@ -31,13 +47,25 @@ const Cart = () => {
                 </div>
                 <p style={{display:"flex", justifyContent:"space-between" ,marginTop:"0.6rem"}}>
 
-                  Total <span style={{fontSize:"1.25rem",fontWeight:"bold"}}> ${1000}</span>
+                  Total <span style={{fontSize:"1.25rem",fontWeight:"bold"}}> ${totalAmt}</span>
                 </p>
 
-                <button> proceed to checkout</button>
+                <button className="checkout-btn"> Proceed To Checkout</button>
               </div>
             </div>
             </div> 
+            <ToastContainer
+position="top-left"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
     </div>
   )
 }
