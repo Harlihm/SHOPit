@@ -20,9 +20,9 @@ const location =useLocation();
 
   return (
     <div>
-    <div style={{maxWidth:"1280px" ,margin:"0.5rem auto",display:"flex" ,gap:"1.5rem", justifyContent:"space-between"}}>
+    <div className="open-item">
                   <div style={{width:"40%",position:"relative"}} className="produc-wrapper-img">
-                    <img style={{width:"100%",height:"550px" ,objectFit:"cover"}} src={details.image} alt="productimager" />
+                    <img className="open-item-img"  src={details.image} alt="productimager" />
                   <div style={{position:"absolute",top:"4px",right:"0"}}>
                     {details.isNew && (
                      <p style={{backgroundColor:"black",color:"white",fontWeight:"bold", padding:"0.5rem 2rem"}}>

@@ -132,6 +132,21 @@ padding:0px 1rem;
     max-width: 700px;
     text-align: center;
   }
+
+  /* .open-item{
+    max-width: 1280px;
+    margin: 0.5rem auto;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .open-item-img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+
+  } */
  .product-card{
   display: flex;
   flex-direction: row;

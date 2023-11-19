@@ -32,7 +32,7 @@ navigate(`/product/${rootId}`,{
       <img className="prod-img" src={product.image} alt="productimg" />
     </div>
     <div className="prod-text">
-     <div style={{display:"flex" ,justifyContent:"space-between" ,alignItems:"center"}}>
+     <div style={{display:"flex" , justifyContent:"space-between" ,alignItems:"center"}}>
      <div>
         <h2 style={{fontSize:"16px" ,width:"max-content",marginRight:"15px"}}> {product.title.substring(0,15)}</h2>
        
