@@ -39,10 +39,8 @@ const Header = () => {
           </div>
       
 
-          
-        </div>
-        <div className="header-ico-shop">
-            <Link style={{ textDecoration: "none", color: "black" }} to="/cart">
+            <div className="header-ico-shop">
+            <Link style={{padding:"0" ,textDecoration: "none", color: "black" }} to="/cart">
               <span style={{ position: "relative" }}>
                 <AiOutlineShopping />
                 <span
@@ -64,11 +62,14 @@ const Header = () => {
                 alt=""
               />
             </Link>
-            <button className="toggle"
+          
+          </div>  <button className="toggle"
     onClick={() => setNavbarOpen((prev) => !prev)}>
       {navbarOpen ? <MdClose /> : <FiMenu/>}
       </button>
-          </div>
+        </div>
+      
+          
       </div>
     </div>
   );
