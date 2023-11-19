@@ -90,7 +90,6 @@ cursor: pointer;
   .menu-nav {
     align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     list-style: none;
     position: absolute;
@@ -98,6 +97,7 @@ cursor: pointer;
     left: 0;
     right: 0;
     top: 0;
+    bottom: 0;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
