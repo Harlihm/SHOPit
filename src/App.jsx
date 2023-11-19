@@ -12,6 +12,7 @@ import {
   ScrollRestoration
 
 } from "react-router-dom";
+import Login from './pages/Login';
 
 
 const Layout =()=>{
@@ -44,6 +45,10 @@ children:[
   { 
     path:"/cart",
     element:<Cart/>,
+  },
+  {
+    path:"/login",
+    element:<Login/>,
   }
 ]
 },

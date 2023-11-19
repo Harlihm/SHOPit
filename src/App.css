@@ -33,35 +33,14 @@ margin: 0px 6rem;
   padding-right: 3px;
 }
 
-.header-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-nav ul{
-list-style: none;
 
-}
-
-.header-nav ul li{
-display: inline-block;
-padding: 0px 6px;
-transition:all ease-in 0.5s;
-cursor: pointer;
-}
-
-.header-nav ul li:hover{
- text-underline-position: below;
- text-underline-offset: 2;
- color: blue;
-}
 
   .header-ico-shop :first-child{
 font-size: 50px;
 padding:0px 1rem;
   }
 
-  .header-ico-shop :nth-child(2){
+  .pfp{
     width: 40px;
     border-radius: 50%;
 
