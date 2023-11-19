@@ -105,7 +105,7 @@ cursor: pointer;
 
     font-size: 18px;
     /* box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%); */
-    transform: translateY(-600px);
+    transform: translateY(-1000px);
     transition: transform ease-in-out 0.2s;
     /* transition: width ease 0.2s; */
   }
